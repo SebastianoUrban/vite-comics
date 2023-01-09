@@ -1,7 +1,7 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper flex-centered">
     <img src="../assets/img/dc-logo.png" alt="Logo Dc">
-    <ul>
+    <ul class="flex-centered">
       <li v-for="navItem in navList">
         {{ navItem.toUpperCase()}}
       </li>
@@ -22,24 +22,22 @@
 
 <style  scoped>
   div.wrapper{
-    width: 80%;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    padding: 15px 0;
+    height: 120px;
+  }
+
+  img {
+    height: 80%;
   }
 
   ul {
     list-style-type: none;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 
   li {
-    margin-left: 15px;
+    margin-left: 20px;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 </style>

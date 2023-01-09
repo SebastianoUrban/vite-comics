@@ -19,4 +19,11 @@ import DcFooter from './components/DcFooter.vue'
 </template>
 
 <style scoped>
+  main {
+    background-color: #1c1c1c;
+    width: 100%;
+  }
+  footer {
+    background-image: url(./assets/img/footer-bg.jpg);
+  }
 </style>
